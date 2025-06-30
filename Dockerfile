@@ -7,6 +7,9 @@ FROM eclipse-temurin:17-jdk-alpine AS builder
 # 작업 디렉토리 설정
 WORKDIR /app
 
+# Alpine linux curl(health check용)
+RUN apk add --no-cache curl
+
 # Gradle Wrapper와 설정 파일 복사
 COPY gradlew .
 COPY gradle gradle
