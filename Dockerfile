@@ -10,6 +10,7 @@ WORKDIR /app
 # Alpine linux curl(health check용)
 RUN apk add --no-cache curl
 
+
 # Gradle Wrapper와 설정 파일 복사
 COPY gradlew .
 COPY gradle gradle
