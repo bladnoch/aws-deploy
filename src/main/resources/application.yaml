@@ -51,7 +51,7 @@ aws:
 
 # 서버 설정
 server:
-  port: 8080
+  port: 80
 
 # Spring Boot Actuator 설정
 management:
